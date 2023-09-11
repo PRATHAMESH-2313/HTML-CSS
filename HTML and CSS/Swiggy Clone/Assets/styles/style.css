@@ -1,5 +1,5 @@
-*
-{
+
+*{
   box-sizing: border-box;
 }
 
@@ -9,7 +9,7 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.container {
+.container1 {
   display: flex;
 }
 
@@ -18,7 +18,9 @@ h1 {
   height: 75vh;
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
+
 .right {
   width: 45vw;
   height: 75vh;
@@ -26,23 +28,29 @@ h1 {
 
 .nav {
   width: 100%;
-  height: 30%;
+  height: 20%;
   display: flex;
 }
 
+
 .leftcontent {
+  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 30px;
-  margin-left: 135px;
+  margin: 20px auto;
 }
+
 
 #logo {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#logo img{
+  width:160px;
+  height:50px;
 }
 
 #buttons {
@@ -67,7 +75,6 @@ a {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  margin-right: 83px;
 }
 
 .lbutton:hover {
@@ -85,7 +92,7 @@ a {
 
 input[type="text"] {
   padding: 20px;
-  width: 432px;
+  width: 100%;
   border: 1px solid rgb(255, 136, 0);
 }
 
@@ -135,7 +142,7 @@ h1 {
 }
 
 .container3 {
-  height: 60vh;
+  height: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -163,14 +170,18 @@ h1 {
   grid-template-columns: auto auto;
 }
 
-#img1 {
+#img1 img{
   display: grid;
   justify-content: center;
+  height:100%;
+  width:100%;
 }
 
-#img2 {
+#img2 img{
   display: grid;
   align-items: end;
+  height:100%;
+  width:100%;
 }
 
 .container4 {
@@ -207,4 +218,97 @@ h1 {
 #right i {
   margin-right: 50px;
   size: 20px;
+}
+
+@media screen and (max-width:600px)
+{
+  .container1
+  {
+    display: block;
+    width: 100%;
+  }
+
+  .left{
+    width: 100%;
+    height: 100%;
+  }
+
+  .leftcontent
+  {
+    margin: 20px;
+  }
+
+  .nav{
+    height: 20%;
+  }
+
+  #logo
+  {
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+
+  #logo img{
+    width: 120px;
+    height: 40px;
+  }
+
+  .sbutton
+  {
+    margin-right: 20px;
+  }
+
+  .right
+  {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .grid
+  {
+    align-items: start;
+  }
+
+  .grid p {
+    margin: 0;
+    font-size: smaller;
+  }
+
+  .container3
+  {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #grid2
+  {
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    border-bottom: 1px solid black;
+  }
+
+  .container4
+  {
+    height: 5vh;
+  }
+  #left img
+  {
+    width:100px;
+    height: 30px;
+    margin-left: 20px;
+  }
+
+  #center p
+  {
+    font-size: x-small;
+  }
+
+  #right i
+  {
+    margin-right: 20px;
+  }
+
+
 }
